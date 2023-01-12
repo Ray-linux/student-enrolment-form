@@ -27,12 +27,11 @@ export default function Form() {
             <label htmlFor="gender">Male</label>
             <input type="radio" id="gender" name = "gender" required/>
             <label htmlFor="gender">Female</label>
-            <input type="radio" id="gender" name = "gender" required/>
+            <input type="radio" id="gender" name = "gender" value="gender" required/>
             <label htmlFor="gender">Others</label>
             </div>
-            <h2>Skills</h2>
-
             <div className="check_values">
+            <lable>Skills</lable>
             <input type="checkbox" name="skill1" id="skill1" value = "java"/>
             <label htmlFor="skill1">React js</label>
             <input type="checkbox" name="skill1" id="skill2" value = "java"/>
@@ -41,6 +40,10 @@ export default function Form() {
             <label htmlFor="skill3">Next js</label>
             <input type="checkbox" name="skill1" id="skill4" value = "java"/>
             <label htmlFor="skill4">Node js</label>
+            </div>
+            <div className="btns">
+                <button id="Enroll">Enroll Student</button>
+                <button id="clear">Clear</button>
             </div>
         </form>
     </>

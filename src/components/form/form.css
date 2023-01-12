@@ -1,8 +1,10 @@
 .form{
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: left;
     margin: 50px 60px;
+    border-right: 2px solid #f03d1d;
 }
 
 .name  input{
@@ -24,4 +26,51 @@
     width: 10rem;
     height: 28px;
     margin: 10px 54px;
+}
+.gender input{
+    margin: 10px 20px;
+}
+.check_values input{
+    margin: 10px 20px;
+}
+input[type=radio]#gender{
+    accent-color: #088a6e;
+    cursor: pointer;
+}
+input[type=checkbox]{
+    accent-color: #088a6e;
+    cursor: pointer;
+}
+
+#Enroll{
+    width: 7rem;
+    margin: 20px 20px 10px 0;
+    height: 30px;
+    color: white;
+    background-color: #169cf0;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-shadow: #2d7bac 0px 20px 30px -5px;
+    transition: transform .3s;
+    cursor: pointer;
+}
+#Enroll:hover{
+    transform: scale(1.2);
+    box-shadow: #2d7bac 0px 30px 30px -1px;
+}
+#clear{
+    width: 5rem;
+    height: 30px;
+    margin: 20px 20px 10px 0;
+    background-color: #d41356;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: white;
+    transition: transform .3s;
+    box-shadow: #be4972 0px 20px 30px -5px;
+    cursor: pointer;
+}
+#clear:hover{
+    transform: scale(1.2);
+    box-shadow: #be4972 0px 30px 30px -1px;
 }

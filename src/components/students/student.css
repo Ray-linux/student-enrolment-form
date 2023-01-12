@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+.students{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.students_details{
+    display: flex;
+    width: 80%;
+    height: 33vh;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Merriweather', serif;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background: linear-gradient(#adf5f1, #87f0bf);
+    
+}
+
+.student_avater{
+    width: 30%;
+    background: linear-gradient(#e04b3d, #EE786E);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:2rem;
+    border-radius: 7px 0 0 7px;
+}
+
+.student_avater img{
+    width: 70%;
+    border-radius: 50%;
+    border: 4px solid linear-gradient(#ee3322, #e9b648);
+}
+
+#stu_name{
+    text-align: center;
+    margin: 15px;
+    font-size: 30px;
+}
+#stu_sex{
+    text-align: left;
+    font-size: 18px;
+    margin: 10px 0;
+}
+#stu_mail{
+    text-align: left;
+    font-size: 18px;
+    margin: 10px 0;
+
+}
+#stu_web{
+    text-align: left;
+    font-size: 18px;
+    margin: 10px 0;
+
+}
+#stu_skills{
+    text-align: left;
+    font-size: 18px;
+    margin: 10px 0;
+
+}
+
+
+
+/* =----------------------------------------------- */
