@@ -4,18 +4,25 @@ import './student.css'
 export default function Students(props) {
   return (
     <div className='students'>
-        <div className="students_details">
+        {
+          props.data.length === 0 ? " ":
+          props.data.map((user) => {
+            return (
+              <div className="students_details">
             <div className="student_avater">
-                <img src={props.data[0].avatar} alt="img" />
+                <img src={user.image} alt="img" />
             </div>
             <div className="ditails">
-                <h2 id="stu_name">Rahul Ray</h2>
-                <h2 id="stu_sex">Gender : male</h2>
-                <h2 id="stu_mail">Email : {props.data[0].email}</h2>
-                <h2 id="stu_web">Website: <a href="www.google.com">click</a></h2>
-                <h2 id="stu_skills">skills: java, html</h2>
+                <h2 id="stu_name">{user.name}</h2>
+                <h2 id="stu_sex">Gender : {user.sex}</h2>
+                <h2 id="stu_mail">Email : {user.email}</h2>
+                <h2 id="stu_web">Website: <a href={user.website}>{user.website}</a></h2>
+                <h2 id="stu_skills">skills: {user.react} {user.node} {user.angular} {user.next}</h2>
             </div>
         </div>
+            )
+          })
+        }
     </div>
   )
 }

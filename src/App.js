@@ -13,7 +13,7 @@ function App() {
     initStudens = JSON.parse( localStorage.getItem("students"));
   }
 
-  const AddStudent = (name, email, website, image, sex) => {
+  const AddStudent = (name, email, website, image, sex,reactjs, nodejs, angularjs, nextjs) => {
     let sno;
     if(students.length===0){
       sno = 0;
@@ -28,34 +28,27 @@ function App() {
       website : website,
       image: image,
       sex: sex,
+      react: reactjs,
+      node:nodejs,
+      angular:angularjs,
+      next:nextjs,
     }
     setStudents([...students, newStudents]);
-    console.log(newStudents);
   }
 
   const [students, setStudents] = useState(initStudens);
   useEffect(() => {
     localStorage.setItem("students", JSON.stringify(students));
-  }, [students])
+  }, [students]);
 
 
-  console.log(students)
 
-  const data = [
-    {
-      id: 1,
-      email: "george.bluth@reqres.in",
-      first_name: "George",
-      last_name: "Bluth",
-      avatar: "https://reqres.in/img/faces/8-image.jpg",
-    },
-  ];
   return (
     <>
       <Header title={"student enrolment form"} />
       <div className="main_page">
       <Form addStudents = {AddStudent}/>
-      <Students data = {data}/>
+      <Students data = {students}/>
       </div>
     </>
   );
